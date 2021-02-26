@@ -10,12 +10,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <script defer src="fontawesome/js/all.js"></script>
-    <title>John Doe</title>
+	<!-- new font -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'  type='text/css'>
+    <title>Andrew Truong's Site</title>
     <style>
         html,
         body {
             height: 100%;
-            font-family: 'Merriweather Sans', sans-serif;
+            font-family: 'Open Sans', sans-serif;
             scroll-behavior: smooth;
         }
 
@@ -45,6 +47,14 @@
         .lang {
             height: 60px;
             transition: 0.3s;
+        }
+		
+		.hImg {
+            height: 250px;
+			
+            transition: 0.3s;
+			border-radius: 50px;
+			
         }
 
         .contacticon {
@@ -81,8 +91,8 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <a class="navbar-brand" href="#landing">John Doe<span class="sr-only">(current)</span></a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <a class="navbar-brand" href="#landing">Andrew Truong<span class="sr-only">(current)</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -99,12 +109,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
                 </li>
+				<li class="nav-item">
+                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                </li>
             </ul>
         </div>
     </nav>
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="landing">
         <div class="row mx-auto">
-            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm John!</h4>
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Hello, I'm Andrew!</h4>
         </div>
         <div class="row mx-auto">
             <h5 class="display-5 mx-auto faded text-center">I'm an Information Science & Technology Student at Temple
@@ -113,11 +126,6 @@
         <div class="row my-4">
             <div class="col my-3"><img src="images/python.jpg" class="lang" data-toggle="tooltip" data-placement="top"
                     title="Python" /></div>
-            <div class="col my-3"><img src="images/angular.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Angular" /></div>
-            <div class="col my-3"><img src="images/typescript.jpg" class="lang" data-toggle="tooltip"
-                    data-placement="top" title="TypeScript" /></div>
-
             <div class="col my-3"><img src="images/csharp.jpg" class="lang" data-toggle="tooltip" data-placement="top"
                     title="C#" /></div>
             <div class="col my-3"><img src="images/node.jpg" class="lang" data-toggle="tooltip" data-placement="top"
@@ -127,9 +135,9 @@
 
             <div class="col my-3"><img src="images/aspnet.jpg" class="lang" data-toggle="tooltip" data-placement="top"
                     title="ASP.NET" /></div>           
-                     <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="Microsoft SQL Server" /></div> <div class="col my-3"><img src="images/mongodb.jpg" class="lang" data-toggle="tooltip" data-placement="top"
-                    title="MongoDB" /></div>
+            <div class="col my-3"><img src="images/mssql.jpg" class="lang" data-toggle="tooltip" data-placement="top"
+				title="Microsoft SQL Server" /></div> 
+					
 
         </div>
         <div class="row my-4">
@@ -141,6 +149,9 @@
             </div>
             <div class="col">
                 <a href="#contact"><button type="button" class="btn btn-outline">Contact</button></a>
+            </div>
+			<div class="col">
+                <a href="#contact"><button type="button" class="btn btn-outline">Hobbies</button></a>
             </div>
         </div>
         <div class="row mt-5 next">
@@ -156,10 +167,10 @@
             <h5 class="display-5 mx-auto faded text-center mb-4">I've worked on some neat things.</h5>
         </div>
         <div class="row w-100">
-            <h5>Inspiro for Esperanza</h5>
+            <h5>Asset Management Tracker</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
+            <p class="text-justify">Current project in CIS 4296 at Temple University! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce maximus nisi
                 in neque blandit auctor. Vestibulum pellentesque fringilla nulla quis sagittis. Donec id erat
                 sodales, fringilla est non, vestibulum tellus. Suspendisse potenti. Fusce et dolor blandit,
                 tincidunt eros non, pharetra orci. Donec massa neque, suscipit at purus ac, cursus tincidunt
@@ -167,10 +178,10 @@
                 faucibus libero. </p>
         </div>
         <div class="row w-100">
-            <h5>Work From Home Pinterest</h5>
+            <h5>Custom PC Assembly</h5>
         </div>
         <div class="row w-100 mb-4">
-            <p class="text-justify">Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
+            <p class="text-justify">I've built multiple custom computers for many clients. For gaming, workstations, and more! Vestibulum vulputate ullamcorper placerat. Fusce bibendum ligula non ex dapibus
                 finibus. Nulla facilisi. Integer eu libero lorem. Pellentesque eget pretium ligula. Donec finibus nibh
                 sed leo dapibus imperdiet. Fusce cursus eu mi sed porttitor. Aliquam eget suscipit dolor, ac mollis
                 risus. Vestibulum commodo turpis nulla, bibendum varius urna dictum porta. </p>
@@ -221,10 +232,60 @@
                 <h5>Database Management Systems</h5>
             </div>
         </div>
+		
+
+		
         <div class="row mt-5 next">
+            <a href="#hobbies" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
+                    title="Hobbies"></i></a> </div>
+    </div>
+	
+	<div class="container landing d-flex justify-content-center flex-column align-items-center" id="hobbies">
+        <div class="row mx-auto">
+            <h4 class="display-4 font-weight-bold mx-auto text-center">Hobbies</h4>
+        </div>
+		
+		
+        <div class="row mx-auto mb-5">
+            <h5 class="display-5 mx-auto faded text-center">What I do in my free time, that is if I have any.</h5>
+        </div>
+		
+		<div class="row my-4">
+		<div ><img src="images/dota.jpg" class="hImg" data-placement="top"
+                    title="Dota 2" /></div>
+		<div ><img src="images/csgo.png" class="hImg" data-placement="top"
+                    title="CSGO" /></div>
+		</div>
+		<div class="row ">
+            <p class="text-center">Video games are usually my go to when I have the time, it's always been part of me and my childhood. Dota 2 and CS:GO are my top played games.
+									I built my first computer in 2015 and have been PC gaming since. </p>
+        </div>
+		
+		<div class="row my-4">
+		<div ><img src="images/skate.jpg" class="hImg" data-placement="top"
+                    title="Skateboarding" /></div>
+		</div>
+		<div class="row ">
+            <p class="text-center">Skating is a newer hobby I'm trying to pick up. I'm not very good at the moment.</p>
+        </div>
+		
+		<div class="row my-4">
+		<div ><img src="images/studio.jpg" class="hImg" data-placement="top"
+                    title="Studio" /></div>
+		</div>
+		<div class="row">
+            <p class="text-center">Music is a small passion of mine that I want to work on. I recently helped build a recording studio
+									with my friends to make music and even sell recording sessions.</p>
+        </div>
+		
+	
+	
+	<div class="row mt-5 next">
             <a href="#contact" class="col"><i class="fas fa-arrow-down" data-toggle="tooltip" data-placement="top"
                     title="Contact"></i></a> </div>
-    </div>
+	
+	</div>
+	
     <div class="container landing d-flex justify-content-center flex-column align-items-center" id="contact">
         <div class="row mx-auto">
             <h4 class="display-4 font-weight-bold mx-auto text-center">Feel Like Reaching Out?</h4>
@@ -233,11 +294,11 @@
             <h5 class="display-5 mx-auto faded text-center">I don't bite.</h5>
         </div>
         <div class="row my-4 contacticon">
-            <a href="mailto:johndoe@gmail.com" class="col mx-3"><i class="fas fa-envelope-square"
+            <a href="mailto:andrew.truong@temple.edu" class="col mx-3"><i class="fas fa-envelope-square"
                     data-toggle="tooltip" data-placement="top" title="Email"></i></a>
-            <a href="https://www.linkedin.com/in/johndoe/" class="col mx-3"><i class="fab fa-linkedin"
+            <a href="https://www.linkedin.com/in/andrew-truong-61419b14b/" class="col mx-3"><i class="fab fa-linkedin"
                     data-toggle="tooltip" data-placement="top" title="LinkedIn"></i></a>
-            <a href="https://github.com/johndoe" class="col mx-3"><i class="fab fa-github-square"
+            <a href="https://github.com/andrewtruong6123" class="col mx-3"><i class="fab fa-github-square"
                     data-toggle="tooltip" data-placement="top" title="Github"></i></a>
 
         </div>
